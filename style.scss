@@ -49,7 +49,12 @@
 //contrast mode
 @media screen and (-ms-high-contrast: active) {
   body {
-    background: rgb(177, 32, 32);
+    h5 {
+      strong {
+        color: red;
+      }
+    }
+    color: green;
   }
 }
 body {

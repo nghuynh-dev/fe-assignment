@@ -38,9 +38,12 @@
     padding-top: 4px !important;
   }
 }
-@media screen and (-ms-high-contrast: active) {
+@media screen and (-ms-high-contrast-adjust: active) {
   body {
-    background: rgb(177, 32, 32);
+    color: green;
+  }
+  body h5 strong {
+    color: red;
   }
 }
 body {
