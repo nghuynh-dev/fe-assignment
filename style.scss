@@ -20,17 +20,37 @@ body {
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   .card {
+    border: none;
     .card-img {
       position: relative;
+      .card-level {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+        .card-level-item {
+          width: 60px;
+          height: 60px;
+          .b-custom {
+            position: absolute;
+            top: -10px;
+          }
+          .span-custom {
+            position: absolute;
+            bottom: 4px;
+          }
+        }
+      }
       .fa-copyright {
         position: absolute;
         top: 0;
         right: 0px;
         background: black;
         color: white;
-        z-index: 1;
+        z-index: 3;
       }
       .card-img-overlay {
+        z-index: 2;
         display: block;
         height: fit-content;
         background-color: rgba(black, $alpha: 0.7);
