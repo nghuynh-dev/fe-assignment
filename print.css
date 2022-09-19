@@ -1,0 +1,19 @@
+@media print {
+  h1 {
+    display: none;
+  }
+  .btn {
+    display: none;
+  }
+  .podcastTable {
+    border-collapse: collapse;
+  }
+  .podcastTable th {
+    text-align: left;
+  }
+  .podcastTable td,
+  .podcastTable th {
+    border: 1px solid rgb(131, 186, 231);
+    padding: 10px;
+  }
+}
