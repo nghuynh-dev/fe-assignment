@@ -5,8 +5,9 @@ buttons.forEach((btn, index) => {
   const panel = panels[index];
 
   btn.onclick = function () {
-    panel.classList.remove("card-default");
-    panel.classList.toggle('hide');
+    // panel.classList.remove("card-default");
+    // panel.classList.toggle('hide');
+    panel.classList.toggle('card-default');
   }
 });
 

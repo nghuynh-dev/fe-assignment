@@ -1,16 +1,53 @@
 // large screen
 @media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 2.5rem;
-    color: red;
+  .col-pc {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+  }
+  .card {
+    width: 800px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    height: 176px !important;
+    .card-img {
+      .card-img-top {
+        width: 264px;
+      }
+      .card-img-overlay {
+        font-size: 10px !important;
+      }
+      // .checkbox-hours {
+      //   width: 800px !important;
+      //   border-radius: 4px;
+      // }
+    }
+    .card-body {
+      padding: 6px 16px 0 16px !important;
+      h5 {
+        font-size: 1rem !important;
+      }
+      hr {
+        display: none !important;
+      }
+      .card-text {
+        font-size: 13px !important;
+      }
+      p {
+        margin-bottom: 17px !important;
+        // padding-bottom: 8px !important;
+        display: -webkit-box;
+        height: 63px !important;
+        line-height: 1.55 !important;
+        -webkit-line-clamp: 3 !important;
+      }
+      .pt-3 {
+        padding-top: 4px !important;
+      }
+    }
   }
 }
 // small screen
 @media only screen and (max-width: 1023px) {
-  h1 {
-    font-size: 2.5rem;
-    color: rgb(41, 4, 247);
-  }
 }
 
 body {
@@ -21,6 +58,14 @@ body {
   font-family: "Nunito", sans-serif;
   .card {
     border: none;
+    position: relative;
+    .checkbox-hours {
+      position: absolute;
+      top: -45px;
+      min-width: 100%;
+      background: white;
+      padding: 5px;
+    }
     .card-img {
       position: relative;
       .card-level {
@@ -29,8 +74,8 @@ body {
         z-index: 1;
         overflow: hidden;
         .card-level-item {
-          width: 60px;
-          height: 60px;
+          width: 50px;
+          height: 50px;
           .b-custom {
             position: absolute;
             top: -10px;
@@ -50,30 +95,24 @@ body {
         z-index: 3;
       }
       .card-img-overlay {
+        padding: 10px 12px;
         z-index: 2;
         display: block;
         height: fit-content;
         background-color: rgba(black, $alpha: 0.7);
         color: rgba(white, $alpha: 1);
         font-size: 12px;
-        animation-name: toggle-btn-show;
-        animation-duration: 1s;
+        // animation-name: toggle-btn-show;
+        // animation-duration: 1s;
       }
-      .hide {
-        background-color: rgba(black, $alpha: 0);
-        color: rgba(white, $alpha: 0);
-        animation-name: toggle-btn-hide;
-        animation-duration: 1s;
-      }
+      // .hide {
+      //   background-color: rgba(black, $alpha: 0);
+      //   color: rgba(white, $alpha: 0);
+      //   animation-name: toggle-btn-hide;
+      //   animation-duration: 1s;
+      // }
       .card-default {
         display: none;
-      }
-      .checkbox-hours {
-        position: absolute;
-        top: -45px;
-        min-width: 100%;
-        background: white;
-        padding: 5px;
       }
     }
     .card-body {
@@ -98,23 +137,23 @@ body {
 }
 
 /* The animation code */
-@keyframes toggle-btn-show {
-  from {
-    background-color: rgba(black, $alpha: 0);
-    color: rgba(white, $alpha: 0);
-  }
-  to {
-    background-color: rgba(black, $alpha: 0.7);
-    color: rgba(white, $alpha: 1);
-  }
-}
-@keyframes toggle-btn-hide {
-  from {
-    background-color: rgba(black, $alpha: 0.7);
-    color: rgba(white, $alpha: 0.7);
-  }
-  to {
-    background-color: rgba(black, $alpha: 0);
-    color: rgba(white, $alpha: 0);
-  }
-}
+// @keyframes toggle-btn-show {
+//   from {
+//     background-color: rgba(black, $alpha: 0);
+//     color: rgba(white, $alpha: 0);
+//   }
+//   to {
+//     background-color: rgba(black, $alpha: 0.7);
+//     color: rgba(white, $alpha: 1);
+//   }
+// }
+// @keyframes toggle-btn-hide {
+//   from {
+//     background-color: rgba(black, $alpha: 0.7);
+//     color: rgba(white, $alpha: 0.7);
+//   }
+//   to {
+//     background-color: rgba(black, $alpha: 0);
+//     color: rgba(white, $alpha: 0);
+//   }
+// }
