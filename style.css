@@ -39,6 +39,11 @@
     padding-top: 4px !important;
   }
 }
+@media screen and (-ms-high-contrast: active) {
+  body {
+    background: #b12020;
+  }
+}
 body {
   background-color: #eceae6;
   box-sizing: border-box;
