@@ -3,7 +3,6 @@
     flex: 0 0 auto !important;
     width: 100% !important;
   }
-
   .card {
     width: 800px !important;
     display: flex !important;
@@ -41,7 +40,7 @@
 }
 @media screen and (-ms-high-contrast: active) {
   body {
-    background: #b12020;
+    background: rgb(177, 32, 32);
   }
 }
 body {

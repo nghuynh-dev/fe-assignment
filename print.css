@@ -1,10 +1,4 @@
 @media print {
-  h1 {
-    display: none;
-  }
-  .btn {
-    display: none;
-  }
   .podcastTable {
     border-collapse: collapse;
   }
