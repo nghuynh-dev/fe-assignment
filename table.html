@@ -4,7 +4,50 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Test</title>
-  <link rel="stylesheet" type="text/css" href="/print.css" media="print">
+  <!-- <link rel="stylesheet" type="text/css" href="/print.css" media="print"> -->
+  <style>
+    .button {
+      background-color: #f4511e;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      margin-top: 10px;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 22px;
+      margin: 24px auto;
+      opacity: 0.8;
+      transition: 0.3s;
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
+      width: 320px;
+    }
+
+    .button:hover {
+      opacity: 1
+    }
+
+    @media print {
+      .podcastTable {
+        border-collapse: collapse;
+      }
+
+      .podcastTable th {
+        text-align: left;
+      }
+
+      .podcastTable td,
+      .podcastTable th {
+        border: 1px solid rgb(131, 186, 231);
+        padding: 10px;
+      }
+
+      .button {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -349,6 +392,9 @@
       </tr>
     </tbody>
   </table>
+  <div class="button" onclick="window.print()">
+    Print
+  </div>
 </body>
 
 </html>
