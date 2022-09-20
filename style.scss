@@ -3,60 +3,53 @@
   .col-pc {
     flex: 0 0 auto !important;
     width: 100% !important;
-  }
-  .card {
-    width: 800px !important;
-    display: flex !important;
-    flex-direction: row !important;
-    height: 176px !important;
-    .card-img {
-      .card-img-top {
-        width: 264px;
+    .card {
+      padding: 10px;
+      width: 800px !important;
+      display: flex !important;
+      flex-direction: row !important;
+      height: 200px !important;
+      .checkbox-hours {
+        left: 0;
       }
-      .card-img-overlay {
-        font-size: 10px !important;
+      .card-img {
+        .card-img-top {
+          width: 264px;
+          height: -webkit-fill-available;
+        }
+        .card-img-overlay {
+          font-size: 10px !important;
+        }
       }
-      // .checkbox-hours {
-      //   width: 800px !important;
-      //   border-radius: 4px;
-      // }
-    }
-    .card-body {
-      padding: 6px 16px 0 16px !important;
-      h5 {
-        font-size: 1rem !important;
-      }
-      hr {
-        display: none !important;
-      }
-      .card-text {
-        font-size: 13px !important;
-      }
-      p {
-        margin-bottom: 17px !important;
-        // padding-bottom: 8px !important;
-        display: -webkit-box;
-        height: 63px !important;
-        line-height: 1.55 !important;
-        -webkit-line-clamp: 3 !important;
-      }
-      .pt-3 {
-        padding-top: 4px !important;
-      }
-    }
-  }
-}
-//contrast mode
-@media screen and (-ms-high-contrast: active) {
-  body {
-    h5 {
-      strong {
-        color: red;
+      .card-body {
+        .card-footer-custom {
+          width: 92.5%;
+        }
+        padding: 0 16px !important;
+        h5 {
+          font-size: 1rem !important;
+        }
+        hr {
+          display: none !important;
+        }
+        .card-text {
+          font-size: 13px !important;
+        }
+        p {
+          margin-bottom: 17px !important;
+          display: -webkit-box;
+          height: 63px !important;
+          line-height: 1.55 !important;
+          -webkit-line-clamp: 3 !important;
+        }
+        .pt-3 {
+          padding-top: 4px !important;
+        }
       }
     }
-    color: green;
   }
 }
+
 body {
   background-color: #eceae6;
   box-sizing: border-box;
@@ -64,6 +57,7 @@ body {
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   .card {
+    height: 475px;
     border: none;
     position: relative;
     .checkbox-hours {
@@ -123,8 +117,16 @@ body {
       }
     }
     .card-body {
+      position: relative;
       .card-footer-custom {
+        position: absolute;
+        width: 87.5%;
+        bottom: 0;
+        padding: 6px 0;
         border-top: 2px solid #294d7f;
+        i {
+          margin-right: 3px;
+        }
       }
       .card-text {
         margin-bottom: 30px;

@@ -3,47 +3,47 @@
     flex: 0 0 auto !important;
     width: 100% !important;
   }
-  .card {
+  .col-pc .card {
+    padding: 10px;
     width: 800px !important;
     display: flex !important;
     flex-direction: row !important;
-    height: 176px !important;
+    height: 200px !important;
   }
-  .card .card-img .card-img-top {
+  .col-pc .card .checkbox-hours {
+    left: 0;
+  }
+  .col-pc .card .card-img .card-img-top {
     width: 264px;
+    height: -webkit-fill-available;
   }
-  .card .card-img .card-img-overlay {
+  .col-pc .card .card-img .card-img-overlay {
     font-size: 10px !important;
   }
-  .card .card-body {
-    padding: 6px 16px 0 16px !important;
+  .col-pc .card .card-body {
+    padding: 0 16px !important;
   }
-  .card .card-body h5 {
+  .col-pc .card .card-body .card-footer-custom {
+    width: 92.5%;
+  }
+  .col-pc .card .card-body h5 {
     font-size: 1rem !important;
   }
-  .card .card-body hr {
+  .col-pc .card .card-body hr {
     display: none !important;
   }
-  .card .card-body .card-text {
+  .col-pc .card .card-body .card-text {
     font-size: 13px !important;
   }
-  .card .card-body p {
+  .col-pc .card .card-body p {
     margin-bottom: 17px !important;
     display: -webkit-box;
     height: 63px !important;
     line-height: 1.55 !important;
     -webkit-line-clamp: 3 !important;
   }
-  .card .card-body .pt-3 {
+  .col-pc .card .card-body .pt-3 {
     padding-top: 4px !important;
-  }
-}
-@media screen and (-ms-high-contrast-adjust: active) {
-  body {
-    color: green;
-  }
-  body h5 strong {
-    color: red;
   }
 }
 body {
@@ -54,6 +54,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 body .card {
+  height: 475px;
   border: none;
   position: relative;
 }
@@ -105,8 +106,18 @@ body .card .card-img .card-img-overlay {
 body .card .card-img .card-default {
   display: none;
 }
+body .card .card-body {
+  position: relative;
+}
 body .card .card-body .card-footer-custom {
+  position: absolute;
+  width: 87.5%;
+  bottom: 0;
+  padding: 6px 0;
   border-top: 2px solid #294d7f;
+}
+body .card .card-body .card-footer-custom i {
+  margin-right: 3px;
 }
 body .card .card-body .card-text {
   margin-bottom: 30px;
