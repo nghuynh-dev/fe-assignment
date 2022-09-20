@@ -54,6 +54,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 body .card {
+  border-radius: 0px !important;
   height: 475px;
   border: none;
   position: relative;
@@ -67,6 +68,9 @@ body .card .checkbox-hours {
 }
 body .card .card-img {
   position: relative;
+}
+body .card .card-img .card-img-top {
+  border-radius: 0px !important;
 }
 body .card .card-img .card-level {
   position: absolute;

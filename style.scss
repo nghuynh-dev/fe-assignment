@@ -57,6 +57,7 @@ body {
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   .card {
+    border-radius: 0px !important;
     height: 475px;
     border: none;
     position: relative;
@@ -69,6 +70,9 @@ body {
     }
     .card-img {
       position: relative;
+      .card-img-top {
+        border-radius: 0px !important;
+      }
       .card-level {
         position: absolute;
         bottom: 0;
