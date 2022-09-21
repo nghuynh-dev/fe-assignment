@@ -75,12 +75,12 @@ body .container-fluid .col-pc .card .checkbox-hours a .container input:checked ~
   display: block;
 }
 body .container-fluid .col-pc .card .checkbox-hours a .container .checkmark:after {
-  left: 8px;
-  top: 4px;
-  width: 5px;
-  height: 10px;
+  left: 7px;
+  top: 1px;
+  width: 8px;
+  height: 16px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 4px 4px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
