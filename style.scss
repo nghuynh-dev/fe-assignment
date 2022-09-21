@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
-  // border: 1px solid rgb(255, 0, 0);
 }
 body {
   background-color: #eceae6;
@@ -12,7 +11,6 @@ body {
     .col-pc {
       min-width: 260px;
       .card {
-        // min-width: 200px;
         box-shadow: 5px 5px 10px grey;
         border-radius: 0px !important;
         border: 1px solid white;
@@ -22,17 +20,63 @@ body {
           top: -60px;
           min-width: 100%;
           background: white;
-          padding: 10px;
+          padding: 0px 0 10px 0px;
           border: 1px solid white;
           a {
-            text-decoration: none;
             color: black;
-            // padding: 0 110px 12px 0;
-            b {
-              margin-left: 4px;
+            text-decoration: none;
+            .container {
+              height: fit-content;
+              width: fit-content;
+              position: relative;
+              padding-left: 35px;
+              padding-right: 0px;
+              cursor: pointer;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+              }
+              .checkmark {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 23px;
+                width: 23px;
+                background-color: #eee;
+                border: 1px solid rgb(200, 200, 200);
+              }
             }
-            input {
-              // outline: none;
+            .container .container:hover input ~ .checkmark {
+              background-color: #ccc;
+            }
+            .container input:checked ~ .checkmark {
+              background-color: #294d7f;
+            }
+            .checkmark:after {
+              content: "";
+              position: absolute;
+              display: none;
+            }
+            .container input:checked ~ .checkmark:after {
+              display: block;
+            }
+            .container .checkmark:after {
+              left: 8px;
+              top: 4px;
+              width: 5px;
+              height: 10px;
+              border: solid white;
+              border-width: 0 3px 3px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
             }
           }
           a:focus-visible {
@@ -58,6 +102,10 @@ body {
             .card-level-item {
               width: 50px;
               height: 50px;
+              i {
+                color: #294d7f;
+                font-size: 40px;
+              }
               .b-custom {
                 position: absolute;
                 top: -10px;
@@ -65,6 +113,16 @@ body {
               .span-custom {
                 position: absolute;
                 bottom: 4px;
+              }
+            }
+            .card-level-item-sub {
+              background-color: #294d7f;
+              color: white;
+              b {
+                font-size: 34px;
+              }
+              span {
+                font-size: 10px;
               }
             }
           }
@@ -99,7 +157,13 @@ body {
             margin: -16px;
             padding: 14px 14px 40px;
             h5 {
+              color: #294d7f;
               overflow: hidden;
+              a {
+                font-size: 20px;
+                text-decoration: none;
+                color: black;
+              }
             }
             p {
               text-overflow: ellipsis;
@@ -124,6 +188,8 @@ body {
               margin: 0;
             }
             i {
+              color: gray;
+              font-size: 20px;
               margin-right: 3px;
             }
           }

@@ -25,15 +25,65 @@ body .container-fluid .col-pc .card .checkbox-hours {
   top: -60px;
   min-width: 100%;
   background: white;
-  padding: 10px;
+  padding: 0px 0 10px 0px;
   border: 1px solid white;
 }
 body .container-fluid .col-pc .card .checkbox-hours a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
-body .container-fluid .col-pc .card .checkbox-hours a b {
-  margin-left: 4px;
+body .container-fluid .col-pc .card .checkbox-hours a .container {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container .checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border: 1px solid rgb(200, 200, 200);
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container input:checked ~ .checkmark {
+  background-color: #294d7f;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container input:checked ~ .checkmark:after {
+  display: block;
+}
+body .container-fluid .col-pc .card .checkbox-hours a .container .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 body .container-fluid .col-pc .card .checkbox-hours a:focus-visible {
   background: rgb(191, 228, 255);
@@ -60,6 +110,10 @@ body .container-fluid .col-pc .card .card-img .card-level .card-level-item {
   width: 50px;
   height: 50px;
 }
+body .container-fluid .col-pc .card .card-img .card-level .card-level-item i {
+  color: #294d7f;
+  font-size: 40px;
+}
 body .container-fluid .col-pc .card .card-img .card-level .card-level-item .b-custom {
   position: absolute;
   top: -10px;
@@ -67,6 +121,16 @@ body .container-fluid .col-pc .card .card-img .card-level .card-level-item .b-cu
 body .container-fluid .col-pc .card .card-img .card-level .card-level-item .span-custom {
   position: absolute;
   bottom: 4px;
+}
+body .container-fluid .col-pc .card .card-img .card-level .card-level-item-sub {
+  background-color: #294d7f;
+  color: white;
+}
+body .container-fluid .col-pc .card .card-img .card-level .card-level-item-sub b {
+  font-size: 34px;
+}
+body .container-fluid .col-pc .card .card-img .card-level .card-level-item-sub span {
+  font-size: 10px;
 }
 body .container-fluid .col-pc .card .card-img .fa-copyright {
   position: absolute;
@@ -100,7 +164,13 @@ body .container-fluid .col-pc .card .card-body .card-body-content {
   padding: 14px 14px 40px;
 }
 body .container-fluid .col-pc .card .card-body .card-body-content h5 {
+  color: #294d7f;
   overflow: hidden;
+}
+body .container-fluid .col-pc .card .card-body .card-body-content h5 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 body .container-fluid .col-pc .card .card-body .card-body-content p {
   text-overflow: ellipsis;
@@ -125,6 +195,8 @@ body .container-fluid .col-pc .card .card-body .card-footer-custom .hours {
   margin: 0;
 }
 body .container-fluid .col-pc .card .card-body .card-footer-custom i {
+  color: gray;
+  font-size: 20px;
   margin-right: 3px;
 }
 
