@@ -173,15 +173,9 @@ body .container-fluid .col-pc .card .card-body .card-body-content h5 a {
   color: black;
 }
 body .container-fluid .col-pc .card .card-body .card-body-content p {
-  text-overflow: ellipsis;
   display: -webkit-box;
   height: 80px;
   line-height: 20px;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  word-break: normal;
-  overflow-wrap: break-word;
 }
 body .container-fluid .col-pc .card .card-body .card-footer-custom {
   position: absolute;
@@ -207,7 +201,8 @@ body .container-fluid .col-pc .card .card-body .card-footer-custom i {
   }
   .col-pc .card {
     padding: 15px 0 15px 15px;
-    width: 800px !important;
+    min-width: 800px !important;
+    max-width: 1100px !important;
     display: flex !important;
     flex-direction: row !important;
   }
