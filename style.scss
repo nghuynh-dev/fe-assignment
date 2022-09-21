@@ -166,7 +166,6 @@ body {
               }
             }
             p {
-              display: -webkit-box;
               height: 80px;
               line-height: 20px;
             }
@@ -234,13 +233,6 @@ body {
           }
           .card-text {
             font-size: 13px !important;
-          }
-          p {
-            margin-bottom: 17px !important;
-            display: -webkit-box;
-            height: 63px !important;
-            line-height: 1.55 !important;
-            -webkit-line-clamp: 3 !important;
           }
           .pt-3 {
             padding-top: 4px !important;

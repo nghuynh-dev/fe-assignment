@@ -8,8 +8,8 @@ buttons.forEach((btn, index) => {
   }
 });
 
-let wrappers = document.querySelectorAll(".card-text");
-wrappers.forEach((wrapper, index) => {
+const wrappers = document.querySelectorAll(".card-text");
+wrappers.forEach((wrapper) => {
   document.addEventListener("DOMContentLoaded", () => {
     let options = {
       callback: function (isTruncated) { },
